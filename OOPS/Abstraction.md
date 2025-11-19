@@ -1,7 +1,3 @@
----
-title: Abstraction
----
-
 # Abstraction
 
 ## What is Abstraction?
