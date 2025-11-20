@@ -19,7 +19,7 @@ class Product {
   name
 }
 class ShoppingCart {
-  calcTotalPrice()
+  calculateTotalPrice()
   printInvoice()
   saveToDB()
 }
@@ -33,7 +33,7 @@ ShoppingCart "1" o-- "*" Product
 - This way `ShoppingCart` has only one reason to change.
 - Each new class has only one job or responsibility.
 
-## Refactored UML Diagram
+## UML Diagram (After)
 ```mermaid
 classDiagram
 class Product {
@@ -41,7 +41,7 @@ class Product {
   name
 }
 class ShoppingCart {
-  calcTotalPrice()
+  calculateTotalPrice()
 }
 class InvoicePrinter {
   printInvoice()
@@ -50,8 +50,8 @@ class DatabaseSaver {
   saveToDB()
 }
 ShoppingCart "1" o-- "*" Product
-InvoicePrinter "1" o-- "1" ShoppingCart
-DatabaseSaver "1" o-- "1" ShoppingCart
+InvoicePrinter "1" --> "1" ShoppingCart
+DatabaseSaver "1" --> "1" ShoppingCart
 ```
 
 
