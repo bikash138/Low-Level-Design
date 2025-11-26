@@ -153,13 +153,13 @@ classDiagram
         +projection()
     }
 
-    class Talkable <<interface>> {
+    class Talkable {
         +talk()
     }
-    class Walkable <<interface>> {
+    class Walkable {
         +walk()
     }
-    class Flyable <<interface>> {
+    class Flyable {
         +fly()
     }
 
@@ -225,7 +225,7 @@ classDiagram
         +execute()
     }
 
-    class Strategy <<interface>> {
+    class Strategy {
         +run()
     }
 
