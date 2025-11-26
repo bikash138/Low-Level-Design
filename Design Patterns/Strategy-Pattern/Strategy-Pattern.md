@@ -106,8 +106,9 @@ classDiagram
 
     Robot <|-- CompanionR
     Robot <|-- WorkerR
-    Robot <|-- SparrowR
-    Robot <|-- CrowR
+    Robot <|-- FlyableR
+    FlyableR <|-- SparrowR
+    FlyableR <|-- CrowR
 ```
 
 In this we see that we are moving inside a loop of inheritance.
