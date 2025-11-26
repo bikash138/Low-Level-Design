@@ -65,8 +65,9 @@ classDiagram
 
     Robot <|-- CompanionR
     Robot <|-- WorkerR
-    Robot <|-- SparrowR
-    Robot <|-- CrowR
+    Robot <|-- FlyableR
+    FlyableR <|-- SparrowR
+    FlyableR <|-- CrowR
 ```
 
 So to solve this one can easily think of using further inheritance.
@@ -91,7 +92,7 @@ classDiagram
         +projection()
     }
 
-    class FlyingRobot {
+    class FlyableR {
         +fly()
     }
 
