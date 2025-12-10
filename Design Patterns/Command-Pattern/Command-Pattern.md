@@ -39,7 +39,8 @@ class RemoteControl {
   +pressButton(slot)
 }
 
-class ICommand <<interface>> {
+class ICommand {
+  <<interface>>
   +execute()
   +undo()
 }
