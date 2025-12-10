@@ -25,7 +25,8 @@ direction LR
 
 class Client
 
-class ITarget <<interface>> {
+class ITarget {
+  <<interface>>
   +request()
 }
 

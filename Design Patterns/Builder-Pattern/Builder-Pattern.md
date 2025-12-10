@@ -105,15 +105,18 @@ direction LR
 class Client
 class Target
 
-class Step1 <<interface>> {
+class Step1 {
+  <<interface>>
   +withUrl(url) : Step2
 }
 
-class Step2 <<interface>> {
+class Step2 {
+  <<interface>>
   +withMethod(method) : Build
 }
 
-class Build <<interface>> {
+class Build {
+  <<interface>>
   +build() : Target
 }
 

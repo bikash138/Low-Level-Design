@@ -105,7 +105,8 @@ So now let's create the UML of the whole Mario game:
 classDiagram
 direction TB
 
-class ICharacter <<interface>> {
+class ICharacter {
+  <<interface>>
   +getAbilities()
 }
 
@@ -113,7 +114,8 @@ class Mario {
   +getAbilities()
 }
 
-class Decorator <<abstract>> {
+class Decorator {
+  <<abstract>>
   -component : ICharacter
   +getAbilities()
 }
