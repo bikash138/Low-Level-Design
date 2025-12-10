@@ -11,19 +11,17 @@ So, one can say this can easily be done by inheriting the object and adding the 
 ## Inheritance Example
 So let's take an example of a base class with `run` method. And we have a child class which inherits the base class and overrides the `run` method. So the UML for this will look like this.
 
-```mermaid
-classDiagram
-    class Base {
-        +run(){
-          print("I am running")
-        }
+```c++
+  class Base {
+    +run(){
+      print("I am running")
     }
-    class Child {
-        +run(){
-          override print("I am running with skates")
-        }
+  }
+  class Child {
+    +run(){
+      override print("I am running with skates")
     }
-    Base <|-- Child
+  }
 ```
 ### Example Calls
 ```c++
